@@ -6,15 +6,16 @@ const connection=mongoose.connect(`mongodb+srv://abhayera2013:Abhay123@cluster0.
 const userschema=mongoose.Schema({
 email:{type : String},
  password : {type : String},
- confirmPassword : {type : String},
+ ConfirmPassword : {type : String},
 
 })
 
 const employeesschema=mongoose.Schema({
-firstName : {type : String},
-lastName : {type : String},
-email : {type : String},
-salary : {type : Number},
+FirstName : {type : String},
+LastName : {type : String},
+Email : {type : String},
+Department:{type:String},
+Salary : {type : Number},
 date : {type : String},
 
 })
